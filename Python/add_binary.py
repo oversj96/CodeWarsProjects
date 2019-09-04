@@ -14,7 +14,8 @@ def add_binary(a,b):
     return(string)
 
 # Using built in python functions
+# Generally, best practice is to use the built-in functions.
 def add_binary2(a,b):
     return bin(a+b)[2:]
 
-add_binary(256, 0)
+add_binary(12322, 7272)
