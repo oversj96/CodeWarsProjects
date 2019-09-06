@@ -13,6 +13,5 @@ def DNA_strand2(dna):
     return dna.translate(str.maketrans("ATCG","TAGC"))
 
 # Test
-dnastrand = DNA_strand2("ATTGC")
-print(dnastrand)
+print(DNA_strand2("ATTGC"))
 
