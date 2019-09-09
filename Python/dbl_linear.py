@@ -1,16 +1,20 @@
 def dbl_linear(n):
     list = [1]
+    list2 = []
+    key = None
+    start = 0
     for x in list:
         n1 = 2*x+1
         n2 = 3*x+1
-        if(n1 not in list):
-            list.append(n1)
-        if(n2 not in list):
-            list.append(n2)
-        list.sort()
-        if(len(list) > n and x == list[n]):
-            break
-    return list[n]
-
-print(dbl_linear(10000000))
-print('')
+        list.append(n1)
+        list.append(n2)
+        if(len(list) > n+1 == 0):
+            list.sort()
+            for x in range(start, len(list)):
+                if(list[x] != key):
+                    list2.append(x)
+                key = list[x]
+            start = x
+    return list2[n-1]
+        
+print(dbl_linear(10))
